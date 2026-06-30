@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Enqueue styles and scripts.
  */
 function mayrachaparro_child_enqueue_assets() {
-	// Enqueue Parent Style (Divi)
+	// 1. Enqueue Parent Style (Divi)
 	wp_enqueue_style(
 		'divi-parent-style',
 		get_template_directory_uri() . '/style.css',
@@ -21,23 +21,39 @@ function mayrachaparro_child_enqueue_assets() {
 		'5.8.1'
 	);
 
-	// Enqueue Child Theme Main style.css
+	// 2. Enqueue Design Tokens
 	wp_enqueue_style(
-		'mayrachaparro-child-style',
-		get_stylesheet_uri(),
+		'mayrachaparro-tokens',
+		get_stylesheet_directory_uri() . '/assets/css/tokens.css',
 		array( 'divi-parent-style' ),
 		'1.0.0'
 	);
 
-	// Enqueue Custom Modular CSS
+	// 3. Enqueue Utilities
 	wp_enqueue_style(
-		'mayrachaparro-custom-style',
-		get_stylesheet_directory_uri() . '/assets/css/main.css',
-		array( 'mayrachaparro-child-style' ),
+		'mayrachaparro-utilities',
+		get_stylesheet_directory_uri() . '/assets/css/utilities.css',
+		array( 'mayrachaparro-tokens' ),
 		'1.0.0'
 	);
 
-	// Enqueue Custom JS with modern defer strategy (WP 6.3+)
+	// 4. Enqueue Child Theme Main style.css (At root, acts as metadata anchor)
+	wp_enqueue_style(
+		'mayrachaparro-child-style-anchor',
+		get_stylesheet_uri(),
+		array( 'mayrachaparro-utilities' ),
+		'1.0.0'
+	);
+
+	// 5. Enqueue Custom Primitives & Base Styles (main.css)
+	wp_enqueue_style(
+		'mayrachaparro-child-main',
+		get_stylesheet_directory_uri() . '/assets/css/main.css',
+		array( 'mayrachaparro-child-style-anchor' ),
+		'1.0.0'
+	);
+
+	// 6. Enqueue Custom JS with modern defer strategy (WP 6.3+)
 	wp_enqueue_script(
 		'mayrachaparro-custom-script',
 		get_stylesheet_directory_uri() . '/assets/js/main.js',

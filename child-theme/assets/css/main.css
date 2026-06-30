@@ -1,6 +1,30 @@
 /**
- * Mayra Chaparro Child Theme - Custom Stylesheet
+ * Mayra Chaparro Child Theme - Main Stylesheet
  *
- * This file contains global styles, layout customizations,
- * and custom component stylings.
+ * This file contains the base elements styles (primitives).
+ * It is loaded last in the design system asset chain.
  */
+
+body {
+	background-color: var(--surface);
+	color: var(--text-primary);
+	font-family: var(--font-family-body);
+	line-height: var(--line-height-normal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--text-primary);
+	font-family: var(--font-family-display);
+	line-height: var(--line-height-tight);
+	margin-top: 0;
+}
+
+a {
+	color: var(--color-primary);
+	text-decoration: none;
+	transition: color var(--transition-fast);
+}
+
+a:hover {
+	color: var(--text-secondary);
+}

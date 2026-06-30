@@ -1,0 +1,91 @@
+/**
+ * Mayra Chaparro Child Theme - Utility Classes
+ *
+ * This file contains reusable, single-purpose classes to manage spacing,
+ * alignment, visibility, and layout composition without writing custom styles.
+ */
+
+/* ==========================================================================
+   1. Text Utilities
+   ========================================================================== */
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-muted {
+	color: var(--text-secondary);
+}
+
+.text-balance {
+	text-wrap: balance;
+}
+
+/* ==========================================================================
+   2. Layout Composition Utilities
+   ========================================================================== */
+/**
+ * Flow utility (Lobotomized Owl pattern)
+ * Establishes a flow layout where siblings receive top margin spacing.
+ */
+.flow > * + * {
+	margin-top: var(--flow-space, var(--space-md));
+}
+
+/**
+ * Stack utility
+ * Standard block vertical stack with custom gaps.
+ */
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: var(--stack-gap, var(--space-md));
+}
+
+/**
+ * Cluster utility
+ * Groups items in a row (with wrapping support) for lists, tags, or buttons.
+ */
+.cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--cluster-gap, var(--space-md));
+	align-items: center;
+}
+
+/**
+ * Grid utility
+ * Simple responsive grid.
+ */
+.grid {
+	display: grid;
+	gap: var(--grid-gap, var(--space-md));
+}
+
+/* ==========================================================================
+   3. Accessibility / Helper Utilities
+   ========================================================================== */
+/**
+ * Hide an element visually while keeping it accessible to screen readers.
+ */
+.visually-hidden {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	-webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
