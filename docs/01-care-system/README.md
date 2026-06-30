@@ -4,19 +4,19 @@ Fuente filosofica principal de la Plataforma Digital de la Dra. Mayra Alejandra 
 
 ## Estado
 
-Pendiente de contenido estrategico aprobado.
+Primeros capitulos incorporados en estado `draft`.
 
 ## Documentos
 
-- `00-prefacio.md`
-- `01-foundation.md`
-- `02-confianza.md`
-- `03-cuidado.md`
-- `04-habitos.md`
-- `05-familias.md`
-- `06-bienestar.md`
-- `07-legado.md`
-- `99-principios.md`
+- `00-prefacio.md` — draft
+- `01-foundation.md` — draft
+- `02-confianza.md` — placeholder
+- `03-cuidado.md` — placeholder
+- `04-habitos.md` — placeholder
+- `05-familias.md` — placeholder
+- `06-bienestar.md` — placeholder
+- `07-legado.md` — placeholder
+- `99-principios.md` — placeholder
 
 ## Regla
 
