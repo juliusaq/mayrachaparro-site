@@ -16,6 +16,7 @@ Primeros capitulos incorporados en estado `draft`.
 - `05-familias.md` — placeholder
 - `06-bienestar.md` — placeholder
 - `07-legado.md` — placeholder
+- `08-principios-del-cuidado.md` — draft
 - `99-principios.md` — placeholder
 
 ## Regla
