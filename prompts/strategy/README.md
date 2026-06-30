@@ -1,0 +1,3 @@
+# Strategy Prompts
+
+Pendiente.
