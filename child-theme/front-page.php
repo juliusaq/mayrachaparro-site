@@ -6,6 +6,7 @@
  */
 
 $whatsapp_url    = 'https://wa.me/5214427928045';
+$maps_url        = 'https://www.google.com/maps/place/Policlinica+Nexus/@20.546105,-100.430961,17z/data=!3m1!4b1!4m6!3m5!1s0x85d34570a90c11db:0x5d75e8e36d3a8826!8m2!3d20.546105!4d-100.4283861!16s%2Fg%2F11bzwpbr5r?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D';
 $hero_image_url  = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-hero.png';
 $about_image_url = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-about.png';
 $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
@@ -54,8 +55,8 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 		<div class="mch-container mch-hero-grid">
 			<div class="mch-hero-copy">
 				<p class="mch-eyebrow">Odontología familiar en Querétaro</p>
-				<h1 id="hero-title">La tranquilidad de cuidar tu sonrisa con alguien en quien puedes confiar.</h1>
-				<p class="mch-hero-subtitle">Atención cercana para niños, adultos y familias, con un enfoque preventivo, claro y humano.</p>
+				<h1 id="hero-title">Una dentista en la que tú y tu familia pueden confiar.</h1>
+				<p class="mch-hero-subtitle">Atención dental cercana para niños, adultos y familias en Querétaro, con explicación clara, trato humano y enfoque preventivo.</p>
 
 				<div class="mch-button-group">
 					<a class="mch-button mch-button-primary" href="<?php echo esc_url( $whatsapp_url ); ?>" target="_blank" rel="noopener">
@@ -66,7 +67,7 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 					</a>
 				</div>
 
-				<p class="mch-microcopy">Sin juicios. Sin presión. Con explicación clara.</p>
+				<p class="mch-microcopy">Sin juicios. Sin presión. Con calma.</p>
 			</div>
 
 			<?php if ( $hero_image_url ) : ?>
@@ -90,6 +91,33 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 				<p>Escucha antes de diagnosticar.</p>
 				<p>Explica antes de decidir.</p>
 				<p>Acompaña antes de tratar.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="mch-section mch-first-visit" aria-labelledby="primera-consulta-title">
+		<div class="mch-container">
+			<div class="mch-section-heading">
+				<h2 id="primera-consulta-title">¿Qué puedes esperar de tu primera consulta?</h2>
+				<p>Una visita clara, tranquila y sin presión.</p>
+			</div>
+
+			<div class="mch-expectation-grid">
+				<article class="mch-expectation-card">
+					<span>01</span>
+					<h3>Te escucho</h3>
+					<p>Primero entendemos qué te preocupa, qué molestias tienes y qué experiencia has tenido antes.</p>
+				</article>
+				<article class="mch-expectation-card">
+					<span>02</span>
+					<h3>Revisamos juntos</h3>
+					<p>Hacemos una valoración clara para conocer el estado actual de tu salud bucal.</p>
+				</article>
+				<article class="mch-expectation-card">
+					<span>03</span>
+					<h3>Decidimos contigo</h3>
+					<p>Te explico tus opciones para que tomes una decisión informada, sin presión ni miedo.</p>
+				</article>
 			</div>
 		</div>
 	</section>
@@ -158,6 +186,10 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 				<p>La Dra. Mayra Chaparro entiende que detrás de cada paciente hay una historia, una experiencia previa y muchas veces también miedo. Por eso su forma de atender se basa en escuchar, explicar y acompañar.</p>
 				<p>No se trata solo de resolver un problema dental. Se trata de ayudarte a sentir tranquilidad y confianza para cuidar tu salud bucal y la de tu familia.</p>
 
+				<blockquote class="mch-doctor-quote">
+					<p>“Sé que muchas personas llegan con miedo al dentista. Mi compromiso es que salgas entendiendo qué sucede y con la tranquilidad de que tomaremos la mejor decisión para tu salud.”</p>
+				</blockquote>
+
 				<ul class="mch-check-list">
 					<li>Atención para niños, adultos y familias.</li>
 					<li>Enfoque preventivo y humano.</li>
@@ -182,10 +214,10 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 		</div>
 	</section>
 
-	<section class="mch-section" aria-labelledby="testimonios-title">
-		<div class="mch-container mch-narrow mch-testimonials">
-			<h2 id="testimonios-title">Pacientes que vuelven con confianza.</h2>
-			<p>Muy pronto compartiremos experiencias reales de pacientes que han confiado en la Dra. Mayra Chaparro.</p>
+	<section class="mch-section" aria-labelledby="claridad-title">
+		<div class="mch-container mch-narrow mch-clarity">
+			<h2 id="claridad-title">La confianza se construye desde la primera visita.</h2>
+			<p>Por eso cada consulta busca que entiendas tu salud bucal, resuelvas tus dudas y salgas con claridad sobre el siguiente paso.</p>
 		</div>
 	</section>
 
@@ -214,7 +246,7 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 				</details>
 				<details>
 					<summary>¿Dónde atiende la Dra. Mayra?</summary>
-					<p>Actualmente atiende en Querétaro. Los datos específicos del consultorio se confirmarán al agendar por WhatsApp.</p>
+					<p>Actualmente atiende en Policlínica Nexus, Querétaro. Los detalles de tu cita se confirman al agendar por WhatsApp.</p>
 				</details>
 			</div>
 		</div>
@@ -223,16 +255,21 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 	<section class="mch-section mch-contact" id="contacto" aria-labelledby="contacto-title">
 		<div class="mch-container mch-contact-panel">
 			<div>
-				<h2 id="contacto-title">Agenda tu cita con la Dra. Mayra Chaparro.</h2>
-				<p>Da el primer paso para cuidar tu salud bucal con una atención cercana, profesional y sin presión.</p>
+				<h2 id="contacto-title">Da el primer paso para cuidar tu salud bucal.</h2>
+				<p>Agenda una cita con la Dra. Mayra Chaparro y recibe una atención cercana, clara y profesional.</p>
 			</div>
 
 			<div class="mch-contact-action">
 				<a class="mch-button mch-button-primary mch-button-large" href="<?php echo esc_url( $whatsapp_url ); ?>" target="_blank" rel="noopener">
 					Agendar cita por WhatsApp
 				</a>
-				<p>Querétaro, México</p>
-				<div class="mch-map-placeholder">Espacio para futura ubicación o mapa</div>
+				<div class="mch-location-box">
+					<p class="mch-location-label">Ubicación para consultas:</p>
+					<p>Policlínica Nexus, Querétaro</p>
+					<a href="<?php echo esc_url( $maps_url ); ?>" target="_blank" rel="noopener">
+						Ver ubicación en Google Maps
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
