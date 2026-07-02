@@ -6,8 +6,8 @@
  */
 
 $whatsapp_url    = 'https://wa.me/5214427928045';
-$hero_image_url  = '';
-$about_image_url = '';
+$hero_image_url  = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-hero.png';
+$about_image_url = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-about.png';
 $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 ?>
 <!doctype html>
