@@ -5,8 +5,10 @@
  * @package mayrachaparro-child
  */
 
-$whatsapp_url = 'https://wa.me/52XXXXXXXXXX';
-$seo_title    = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
+$whatsapp_url    = 'https://wa.me/5214427928045';
+$hero_image_url  = '';
+$about_image_url = '';
+$seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -67,9 +69,15 @@ $seo_title    = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 				<p class="mch-microcopy">Sin juicios. Sin presión. Con explicación clara.</p>
 			</div>
 
-			<div class="mch-photo-placeholder mch-photo-placeholder-hero" role="img" aria-label="Espacio para foto principal de la Dra. Mayra">
-				<span>Foto principal de la Dra. Mayra aquí</span>
-			</div>
+			<?php if ( $hero_image_url ) : ?>
+				<div class="mch-photo-frame mch-photo-frame-hero">
+					<img src="<?php echo esc_url( $hero_image_url ); ?>" alt="Dra. Mayra Chaparro">
+				</div>
+			<?php else : ?>
+				<div class="mch-photo-placeholder mch-photo-placeholder-hero" role="img" aria-label="Espacio para foto principal de la Dra. Mayra">
+					<span>Foto principal de la Dra. Mayra aquí</span>
+				</div>
+			<?php endif; ?>
 		</div>
 	</section>
 
@@ -134,9 +142,15 @@ $seo_title    = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 
 	<section class="mch-section mch-doctor" id="conoce-a-mayra" aria-labelledby="mayra-title">
 		<div class="mch-container mch-doctor-grid">
-			<div class="mch-photo-placeholder mch-photo-placeholder-secondary" role="img" aria-label="Espacio para foto secundaria de la Dra. Mayra">
-				<span>Foto secundaria de la Dra. Mayra aquí</span>
-			</div>
+			<?php if ( $about_image_url ) : ?>
+				<div class="mch-photo-frame mch-photo-frame-secondary">
+					<img src="<?php echo esc_url( $about_image_url ); ?>" alt="Dra. Mayra Chaparro">
+				</div>
+			<?php else : ?>
+				<div class="mch-photo-placeholder mch-photo-placeholder-secondary" role="img" aria-label="Espacio para foto secundaria de la Dra. Mayra">
+					<span>Foto secundaria de la Dra. Mayra aquí</span>
+				</div>
+			<?php endif; ?>
 
 			<div class="mch-doctor-copy">
 				<p class="mch-eyebrow">Conoce a tu doctora</p>

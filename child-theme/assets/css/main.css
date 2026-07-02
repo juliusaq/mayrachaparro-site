@@ -268,12 +268,37 @@ body.admin-bar .mch-site-header {
 	z-index: 1;
 }
 
+.mch-photo-frame {
+	background: var(--surface-alt);
+	border: 1px solid var(--border-subtle);
+	border-radius: var(--radius-xl);
+	box-shadow: var(--shadow-md);
+	overflow: hidden;
+}
+
+.mch-photo-frame img {
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
 .mch-photo-placeholder-hero {
 	aspect-ratio: 4 / 5;
 	min-height: min(620px, 72vh);
 }
 
+.mch-photo-frame-hero {
+	aspect-ratio: 4 / 5;
+	min-height: min(620px, 72vh);
+}
+
 .mch-photo-placeholder-secondary {
+	aspect-ratio: 5 / 6;
+	min-height: 440px;
+}
+
+.mch-photo-frame-secondary {
 	aspect-ratio: 5 / 6;
 	min-height: 440px;
 }
@@ -536,7 +561,9 @@ body.admin-bar .mch-site-header {
 	}
 
 	.mch-photo-placeholder-hero,
-	.mch-photo-placeholder-secondary {
+	.mch-photo-placeholder-secondary,
+	.mch-photo-frame-hero,
+	.mch-photo-frame-secondary {
 		min-height: 420px;
 	}
 
@@ -588,7 +615,9 @@ body.admin-bar .mch-site-header {
 	}
 
 	.mch-photo-placeholder-hero,
-	.mch-photo-placeholder-secondary {
+	.mch-photo-placeholder-secondary,
+	.mch-photo-frame-hero,
+	.mch-photo-frame-secondary {
 		aspect-ratio: 4 / 5;
 		min-height: 340px;
 	}
