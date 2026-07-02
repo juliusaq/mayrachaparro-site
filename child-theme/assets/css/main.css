@@ -80,6 +80,10 @@ body.mch-home {
 	z-index: var(--z-sticky);
 }
 
+body.admin-bar .mch-site-header {
+	top: 32px;
+}
+
 .mch-header-inner {
 	align-items: center;
 	display: flex;
@@ -554,6 +558,10 @@ body.mch-home {
 }
 
 @media (max-width: 640px) {
+	body.admin-bar .mch-site-header {
+		top: 46px;
+	}
+
 	.mch-container {
 		padding-inline: var(--space-lg);
 	}
