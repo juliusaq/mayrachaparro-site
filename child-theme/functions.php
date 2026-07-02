@@ -66,3 +66,30 @@ function mayrachaparro_child_enqueue_assets() {
 	);
 }
 add_action( 'wp_enqueue_scripts', 'mayrachaparro_child_enqueue_assets' );
+
+/**
+ * Customize the MVP homepage document title.
+ *
+ * @param string $title Current document title.
+ * @return string
+ */
+function mayrachaparro_home_document_title( $title ) {
+	if ( is_front_page() ) {
+		return 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
+	}
+
+	return $title;
+}
+add_filter( 'pre_get_document_title', 'mayrachaparro_home_document_title' );
+
+/**
+ * Add the MVP homepage meta description.
+ */
+function mayrachaparro_home_meta_description() {
+	if ( ! is_front_page() ) {
+		return;
+	}
+
+	echo '<meta name="description" content="Atención dental cercana para niños, adultos y familias en Querétaro. Agenda tu cita por WhatsApp con la Dra. Mayra Chaparro.">' . "\n";
+}
+add_action( 'wp_head', 'mayrachaparro_home_meta_description', 1 );
