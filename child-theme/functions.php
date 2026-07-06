@@ -95,3 +95,14 @@ function mayrachaparro_home_meta_description() {
 	echo '<meta name="description" content="Atención dental cercana para niños, adultos y familias en Querétaro. Agenda tu cita por WhatsApp con la Dra. Mayra Chaparro.">' . "\n";
 }
 add_action( 'wp_head', 'mayrachaparro_home_meta_description', 1 );
+
+/**
+ * Add Metricool tracking script to the footer.
+ */
+function mayrachaparro_add_metricool_pixel() {
+	?>
+	<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"b6607db822fd62b6b8bce07a8d3adea1"})});</script>
+	<?php
+}
+add_action( 'wp_footer', 'mayrachaparro_add_metricool_pixel' );
+
