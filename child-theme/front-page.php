@@ -56,7 +56,7 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 			<div class="mch-hero-copy">
 				<p class="mch-eyebrow">Odontología familiar en Querétaro</p>
 				<h1 id="hero-title">Una dentista en la que tú y tu familia pueden confiar.</h1>
-				<p class="mch-hero-subtitle">Atención dental cercana para niños, adultos y familias en Querétaro, con explicación clara, trato humano y enfoque preventivo.</p>
+				<p class="mch-hero-subtitle">Atención dental cercana con explicación clara, trato humano y enfoque preventivo.</p>
 
 				<div class="mch-button-group">
 					<a class="mch-button mch-button-primary" href="<?php echo esc_url( $whatsapp_url ); ?>" target="_blank" rel="noopener">
@@ -144,11 +144,11 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 				</article>
 				<article class="mch-service-card">
 					<h3>Odontología familiar</h3>
-					<p>Atención cercana para niños, adultos y familias que buscan una doctora de confianza.</p>
+					<p>Atención cercana para pacientes que buscan una doctora de confianza.</p>
 				</article>
 				<article class="mch-service-card">
 					<h3>Resinas dentales</h3>
-					<p>Restauraciones estéticas y funcionales para recuperar dientes afectados por caries o fracturas pequeñas.</p>
+					<p>Restauraciones estéticas y funcionales para recuperar dientes afectados por caries.</p>
 				</article>
 				<article class="mch-service-card">
 					<h3>Blanqueamiento dental</h3>
@@ -191,7 +191,7 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 				</blockquote>
 
 				<ul class="mch-check-list">
-					<li>Atención para niños, adultos y familias.</li>
+					<li>Atención integral para toda tu familia.</li>
 					<li>Enfoque preventivo y humano.</li>
 					<li>Explicaciones claras antes de iniciar cualquier tratamiento.</li>
 					<li>Agenda sencilla por WhatsApp.</li>
@@ -230,7 +230,7 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 			<div class="mch-faq-list">
 				<details>
 					<summary>¿Atiendes niños?</summary>
-					<p>Sí. La atención está pensada para que los niños se sientan tranquilos y acompañados durante su visita.</p>
+					<p>Sí, por medio de nuestra especialista en odontopediatría. La atención está pensada para que los niños se sientan tranquilos y acompañados durante su visita.</p>
 				</details>
 				<details>
 					<summary>¿Puedo agendar por WhatsApp?</summary>
