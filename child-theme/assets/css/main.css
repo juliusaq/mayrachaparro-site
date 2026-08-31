@@ -290,6 +290,10 @@ body.admin-bar .mch-site-header {
 	padding: clamp(1.5rem, 4.5vw, 3.5rem) clamp(1.5rem, 4.5vw, 3.75rem) 0;
 }
 
+.mch-photo-frame picture {
+	display: contents;
+}
+
 .mch-photo-frame img {
 	display: block;
 	height: auto;

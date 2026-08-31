@@ -5,17 +5,20 @@
  * @package mayrachaparro-child
  */
 
-$whatsapp_url    = 'https://wa.me/5214427928045';
-$maps_url        = 'https://www.google.com/maps/place/Policlinica+Nexus/@20.546105,-100.430961,17z/data=!3m1!4b1!4m6!3m5!1s0x85d34570a90c11db:0x5d75e8e36d3a8826!8m2!3d20.546105!4d-100.4283861!16s%2Fg%2F11bzwpbr5r?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D';
-$hero_image_url  = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-hero.png';
-$about_image_url = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-about.png';
-$seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
+$whatsapp_url     = 'https://wa.me/5214427928045';
+$maps_url         = 'https://www.google.com/maps/place/Policlinica+Nexus/@20.546105,-100.430961,17z/data=!3m1!4b1!4m6!3m5!1s0x85d34570a90c11db:0x5d75e8e36d3a8826!8m2!3d20.546105!4d-100.4283861!16s%2Fg%2F11bzwpbr5r?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D';
+$hero_image_webp  = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-hero.webp';
+$hero_image_png   = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-hero.png';
+$about_image_webp = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-about.webp';
+$about_image_png  = 'https://mayrachaparro.com/wp-content/uploads/2026/07/dra-mayra-chaparro-about.png';
+$seo_title        = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" as="image" href="<?php echo esc_url( $hero_image_webp ); ?>" type="image/webp" fetchpriority="high">
 	<?php
 	ob_start();
 	wp_head();
@@ -70,9 +73,12 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 				<p class="mch-microcopy">Sin juicios. Sin presión. Con calma.</p>
 			</div>
 
-			<?php if ( $hero_image_url ) : ?>
+			<?php if ( $hero_image_webp || $hero_image_png ) : ?>
 				<div class="mch-photo-frame mch-photo-frame-hero">
-					<img src="<?php echo esc_url( $hero_image_url ); ?>" alt="Dra. Mayra Chaparro">
+					<picture>
+						<source srcset="<?php echo esc_url( $hero_image_webp ); ?>" type="image/webp">
+						<img src="<?php echo esc_url( $hero_image_png ); ?>" alt="Dra. Mayra Chaparro" width="1200" height="1500" fetchpriority="high" loading="eager" decoding="async">
+					</picture>
 				</div>
 			<?php else : ?>
 				<div class="mch-photo-placeholder mch-photo-placeholder-hero" role="img" aria-label="Espacio para foto principal de la Dra. Mayra">
@@ -170,9 +176,12 @@ $seo_title       = 'Dra. Mayra Chaparro | Odontología familiar en Querétaro';
 
 	<section class="mch-section mch-doctor" id="conoce-a-mayra" aria-labelledby="mayra-title">
 		<div class="mch-container mch-doctor-grid">
-			<?php if ( $about_image_url ) : ?>
+			<?php if ( $about_image_webp || $about_image_png ) : ?>
 				<div class="mch-photo-frame mch-photo-frame-secondary">
-					<img src="<?php echo esc_url( $about_image_url ); ?>" alt="Dra. Mayra Chaparro">
+					<picture>
+						<source srcset="<?php echo esc_url( $about_image_webp ); ?>" type="image/webp">
+						<img src="<?php echo esc_url( $about_image_png ); ?>" alt="Dra. Mayra Chaparro" width="1000" height="1250" loading="lazy" decoding="async">
+					</picture>
 				</div>
 			<?php else : ?>
 				<div class="mch-photo-placeholder mch-photo-placeholder-secondary" role="img" aria-label="Espacio para foto secundaria de la Dra. Mayra">
